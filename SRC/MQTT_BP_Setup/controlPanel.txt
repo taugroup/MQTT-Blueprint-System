@@ -1,0 +1,5 @@
+Unreal_Engine_Path: "E:\Games\UE5_3\UE_5.3"
+Unreal_Engine_Version: "5.3"
+SDK_Build: "Win64"
+Unreal_Project_Path: "H:\School-Archive\GAR Position\00Unreal\MyProject"
+Was_Packaged: "0"

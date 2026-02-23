@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+  "EngineVersion": "5.3.0",
+	"FriendlyName": "MQTT_blueprint_system",
+	"Description": "A blueprint system of the MQTT Client",
+	"Category": "Other",
+	"CreatedBy": "Britain Thomas, Sina Salimi, and Alyssa Cassidy",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false
+}
