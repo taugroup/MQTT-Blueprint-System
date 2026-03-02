@@ -14,7 +14,7 @@
 		3.) Run "runEnable.bat" to enable the plugin and its contents to your UE Project
 			Once Build successful:
 				In your UE Project, in the content browser go to-
-					Engine>Plugin>MQTT_blueprint_system Content
+					Engine>Plugins>MQTT_blueprint_system Content
 						Migrate the "MQTT" folder to your current project
 		4.) Place MQTT_Client in level to create the MQTT_Client
 		5.) Place MQTT_Import_Data in level to communicate/rig functionality of MQTT
@@ -48,3 +48,4 @@
 	If you do not see "MQTT_Python" or "MQTT_BP Guide" Folders:
 		Run "runEnable.bat" to enable the plugin and its contents to your UE Project
 		
+
