@@ -1,5 +1,5 @@
 # embedPlugin.py
-# Builds + installs MQTT_blueprint_system plugin into UE Engine Marketplace using controlPanel.txt
+# Builds + installs MQTT_BP_System_v05_ABStable plugin into UE Engine Marketplace using controlPanel.txt
 
 import os
 import re
@@ -230,14 +230,14 @@ def main():
         uproject = find_uproject(unreal_project_path)
         if uproject:
             if not is_plugin_enabled_in_uproject(uproject, "MqttUtilities"):
-                print('WARNING: "MqttUtilities" plugin was undetected and the MQTT_blueprint_system may not function properly')
+                print('WARNING: "MqttUtilities" plugin was undetected and the MQTT_BP_System_v05_ABStable may not function properly')
         else:
             print('WARNING: No .uproject found in Unreal_Project_Path; cannot check "MqttUtilities" enable state. Continuing...')
 
         step = "RESOLVE_PLUGIN_PATHS"
         data_dir = script_dir / "Data"
-        plugin_root = data_dir / "MQTT_blueprint_system"
-        uplugin_path = plugin_root / "MQTT_blueprint_system.uplugin"
+        plugin_root = data_dir / "MQTT_BP_System_v05_ABStable"
+        uplugin_path = plugin_root / "MQTT_BP_System_v05_ABStable.uplugin"
         packaged_dir = data_dir / "packaged"
 
         if not uplugin_path.exists():
@@ -261,13 +261,13 @@ def main():
 
         # -------- FIXED: robust packaged output detection --------
         step = "VERIFY_PACKAGED_OUTPUT"
-        built_plugin_dir = find_packaged_plugin_dir(packaged_dir, "MQTT_blueprint_system.uplugin")
+        built_plugin_dir = find_packaged_plugin_dir(packaged_dir, "MQTT_BP_System_v05_ABStable.uplugin")
 
-        # Install destination: <UE>\Engine\Plugins\Marketplace\MQTT_blueprint_system
+        # Install destination: <UE>\Engine\Plugins\Marketplace\MQTT_BP_System_v05_ABStable
         step = "INSTALL_TO_ENGINE_MARKETPLACE"
         marketplace_dir = unreal_engine_path / "Engine" / "Plugins" / "Marketplace"
         marketplace_dir.mkdir(parents=True, exist_ok=True)
-        dest_dir = marketplace_dir / "MQTT_blueprint_system"
+        dest_dir = marketplace_dir / "MQTT_BP_System_v05_ABStable"
 
         if dest_dir.exists():
             safe_rmtree(dest_dir)

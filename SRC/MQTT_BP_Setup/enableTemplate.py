@@ -7,19 +7,6 @@ import traceback
 from pathlib import Path
 from datetime import datetime
 
-"""
-enableTemplate.py (rewritten)
-
-Purpose (per MQTT_BP_Setup.txt):
-- Ensure the engine plugin "MQTT_blueprint_system" is enabled for the user's Unreal project (.uproject)
-- Copy two resource folders from the INSTALLED engine plugin into the project's ROOT folder:
-    - "MQTT BP Guide"
-    - "MQTT_Python"
-
-Explicitly REMOVED (per request):
-- Any functionality related to seedTemplate.py / Unreal python commandlet / migrating Content/MQTT assets.
-"""
-
 CONTROL_RE = re.compile(r'^\s*([A-Za-z0-9_]+)\s*:\s*"(.*)"\s*$')
 
 
@@ -221,11 +208,11 @@ def main():
 
         # Enable ONLY the MQTT plugin (seedTemplate-related plugins removed)
         step = "ENABLE_PLUGIN_IN_UPROJECT"
-        enable_plugins_in_uproject(uproject, ["MQTT_blueprint_system"])
+        enable_plugins_in_uproject(uproject, ["MQTT_BP_System_v05_ABStable"])
 
         # Find installed engine plugin folder
         step = "FIND_ENGINE_PLUGIN"
-        engine_plugin_root = find_installed_engine_plugin(unreal_engine_path, "MQTT_blueprint_system")
+        engine_plugin_root = find_installed_engine_plugin(unreal_engine_path, "MQTT_BP_System_v05_ABStable")
 
         # Copy external resource folders into project root
         step = "COPY_RESOURCES_GUIDE_AND_PYTHON"

@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+  "EngineVersion": "5.7.4",
+	"FriendlyName": "MQTT_BP_System_v05_ABStable",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Britain Thomas, Sina Alidoust Salimi, Alyssa Cassity, Manuel Toledo",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false
+}
